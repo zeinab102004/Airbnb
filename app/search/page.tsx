@@ -4,7 +4,6 @@ import Header from '../components/header/Header';
 import { getSearchResult } from '../utils/api';
 import { SearchResultData } from '../types/app';
 import ListingCard from '../components/ListingCard';
-import Map from '../components/Map';
 
 type SearchParams = {
   location: string;
@@ -67,9 +66,6 @@ const SearchResult = async ({
                   />
                 ))}
               </div>
-            </div>
-            <div className='hidden xl:inline-flex xl:min-w-[600px]'>
-              <Map searchResultData={searchResultData} />
             </div>
           </div>
         </section>
